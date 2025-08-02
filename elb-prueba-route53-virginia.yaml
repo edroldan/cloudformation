@@ -73,6 +73,7 @@ Parameters:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instances
     Type: AWS::EC2::KeyPair::KeyName
     ConstraintDescription: must be the name of an existing EC2 KeyPair.
+    Default: prueba-ec2
 
   SSHLocation:
     Description: The IP address range that can be used to SSH to the EC2 instances
@@ -85,7 +86,8 @@ Parameters:
 
   SubnetId:
     Type: AWS::EC2::Subnet::Id
-    Description: The Subnet ID of the subnet in which to place the instance. 
+    Description: The Subnet ID of the subnet in which to place the instance.
+    Default: subnet-07767f4be9ef45fa6
 
 Mappings:
   Region2Examples:
