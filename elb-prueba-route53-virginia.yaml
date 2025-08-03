@@ -270,10 +270,10 @@ Resources:
   #   Properties:
   #     BucketName: s3-dpa-ine
 
-Outputs:
-  URL:
-    Description: URL of the sample website
-    Value: !Join
-      - ""
-      - - http://
-        - !GetAtt ElasticLoadBalancer.DNSName
+# Outputs:
+#   URL:
+#     Description: URL of the sample website
+#     Value: !Join
+#       - ""
+#       - - http://
+#         - !GetAtt ElasticLoadBalancer.DNSName
